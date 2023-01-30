@@ -3,7 +3,7 @@
       <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div class="sm:max-w-lg">
-            <h1 class="font text-4xl font-bold tracking-tight sm:text-6xl dark:text-gray-200">Books are<br>cool again.</h1>
+            <h1 class="font text-4xl font-bold tracking-tight sm:text-6xl dark:text-gray-200 font-serif">Books are<br>cool again.</h1>
             <p class="mt-4 text-xl text-gray-500 dark:text-gray-100">Discover Your Next Favorite Read! Join Our Thriving Book Club Community and Dive into a World of Literature Today!</p>
           </div>
           <div>

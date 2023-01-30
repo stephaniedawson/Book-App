@@ -1,4 +1,4 @@
-# book-search
+# book-app
 
 ## Project setup
 ```

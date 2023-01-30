@@ -1,7 +1,7 @@
 <template>
     <div class="bg-slate-100 dark:bg-gray-800 shadow-inner">
         <div class="container mx-auto py-10">
-            <div class="flex md:flex-col lg:flex-row lg:items-center mb-6">
+            <div class="flex md:flex-col lg:flex-row lg:items-center mb-4 mx-4">
                 <div class="text-center mx-auto md:mb-6 lg:text-left">
                     <a href="#" class="block mb-4">
                         <img class="inline-block h-8 w-auto lg:hidden" src="../assets/logo.png" alt="Your Company" />

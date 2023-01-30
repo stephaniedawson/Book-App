@@ -1,7 +1,7 @@
 <template>
     <div class="search-box bg-slate-100 dark:bg-slate-800">
         <div class="container mx-auto py-36">
-            <h1 class="text-center text-slate-700 dark:text-white text-3xl font-bold mb-4">Find Your Next Book</h1>
+            <h1 class="text-center text-slate-700 dark:text-white text-3xl font-bold mb-8 font-serif">Find Your Next Book</h1>
             <div class="query px-3">
                 <form @submit.prevent="search">
                     <div class="search-bar p-1 flex items-center border-1 bg-white border shadow-md rounded-lg mx-auto lg:w-1/2">

@@ -1,6 +1,6 @@
 <template>
     <div class="book-list bg-white dark:bg-slate-900 py-7">
-        <h1 class="text-3xl font-bold text-center dark:text-gray-100 my-3">Current NYT Best Sellers - Fiction</h1>
+        <h1 class="text-3xl font-bold text-center dark:text-gray-100 my-6 font-serif">Current NYT Best Sellers - Fiction</h1>
         <div class="books container mx-auto">
             <carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
                 <slide v-for="book in books" :key="book">
@@ -29,7 +29,7 @@ export default {
     data: () => ({
     // carousel settings
     settings: {
-      itemsToShow: 1,
+      itemsToShow: 2,
       snapAlign: 'center',
     },
     // breakpoints are mobile first
