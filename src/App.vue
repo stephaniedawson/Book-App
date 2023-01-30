@@ -1,6 +1,6 @@
 <template>
   <Nav />
-  <Header />
+  <Header :books="books" />
   <BookSearch />
   <TrendingBooks :books="books" />
   <Footer />
