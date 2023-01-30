@@ -1,16 +1,16 @@
 <template>
-    <div class="book-list bg-gradient-to-r from-slate-200 via-slate-300 to-slate-200 py-7">
-        <h1 class="text-3xl font-bold text-center">Current Best Sellers</h1>
+    <div class="book-list bg-white dark:bg-slate-900 py-7">
+        <h1 class="text-3xl font-bold text-center dark:text-gray-100 my-3">Current NYT Best Sellers - Fiction</h1>
         <div class="books container mx-auto">
             <carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
                 <slide v-for="book in books" :key="book">
-                    <div class="carousel__item bg-white rounded-lg border border-slate-300 p-6 w-80 shadow-lg shadow-slate-400">
-                        <TrendingBook :book="book" :key="book.volumeInfo.id"/>
+                    <div class="carousel__item bg-white rounded-lg border border-slate-300 p-6 w-80 shadow-lg shadow-slate-400 dark:shadow-none">
+                        <TrendingBook :book="book" :key="book.rank"/>
                     </div>
                 </slide>
 
                 <template #addons>
-                <navigation />
+                <navigation class="dark:text-white" />
                 </template>
             </carousel>
         </div>

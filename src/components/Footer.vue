@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-100 dark:bg-gray-800 shadow-inner">
+    <div class="bg-slate-100 dark:bg-gray-800 shadow-inner">
         <div class="container mx-auto py-10">
             <div class="flex md:flex-col lg:flex-row lg:items-center mb-6">
                 <div class="text-center mx-auto md:mb-6 lg:text-left">

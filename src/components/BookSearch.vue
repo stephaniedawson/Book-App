@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-gray-100 dark:bg-gray-800">
-        <div class="container mx-auto py-20">
+    <div class="search-box bg-slate-100 dark:bg-slate-800">
+        <div class="container mx-auto py-36">
             <h1 class="text-center text-slate-700 dark:text-white text-3xl font-bold mb-4">Find Your Next Book</h1>
             <div class="query px-3">
                 <form @submit.prevent="search">
                     <div class="search-bar p-1 flex items-center border-1 bg-white border shadow-md rounded-lg mx-auto lg:w-1/2">
                         <input type="text" v-model="keyword" placeholder="Search..." class="rounded-l-sm w-full px-4 text-gray-700 leading-tight focus:outline-none" required>
-                        <button type="submit" value="Search" class="bg-emerald-500 text-white rounded-full p-2 hover:bg-slate-700 focus:outline-none w-12 h-12 flex items-center justify-center text-2xl"><fa icon="search" class="animate-pulse"></fa></button>
+                        <button type="submit" value="Search" class="bg-emerald-500 text-white rounded hover:bg-slate-700 m-1 focus:outline-none w-24 h-12 flex items-center justify-center text-xl"><fa icon="search"></fa></button>
                     </div>
                     <div class="search-options relative text-center mt-4 w-64 mx-auto z-0" v-if="loadState == 'success'">
                         <select name="order" v-model="orderBy" @change="search" class="block appearance-none w-full mx-auto bg-gray-50 border border text-gray-700 py-2 px-3 rounded leading-tight focus:outline-none">
@@ -65,5 +65,10 @@ import axios from 'axios'
 </script>
 
 <style scoped>
-
+    .search-box {
+        background-image: url("../assets/background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>

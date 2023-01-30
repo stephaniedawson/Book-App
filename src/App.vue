@@ -1,5 +1,6 @@
 <template>
   <Nav />
+  <Header />
   <BookSearch />
   <TrendingBooks :books="books" />
   <Footer />
@@ -11,10 +12,11 @@ import getBooks from './composables/getBooks'
 import Nav from './components/Nav.vue'
 import BookSearch from './components/BookSearch.vue'
 import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
-  components: { TrendingBooks, getBooks, Nav, BookSearch, Footer },
+  components: { Header, TrendingBooks, getBooks, Nav, BookSearch, Footer },
   setup() {
     const { books, error, load } = getBooks()
     load()

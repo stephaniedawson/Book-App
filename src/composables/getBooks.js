@@ -6,12 +6,13 @@ const getBooks = () => {
 
     const load = async () => {
       try {
-        let res = await fetch( 'https://www.googleapis.com/books/v1/users/110563385573990342210/bookshelves/1001/volumes?&maxResults=15&key=AIzaSyDtku5s3RtmzBcw0MHNqTMrD1KUmsF7mEA' )
+        let res = await fetch( 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=FwZYcLWmmfGl5AYWiBF51VCnrGRLxAqg' )
         if (!res.ok) {
           throw Error( 'no data' )
         }
         const data = await res.json()
-        books.value = data.items
+        console.log(data.results.books)
+        books.value = data.results.books
       }
       catch (err) {
         error.value = err.message
